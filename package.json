@@ -1,0 +1,20 @@
+{
+  "name": "api_mysql",
+  "version": "1.0.0",
+  "description": "api rest with mysql",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon index.js",
+    "dev": ""
+  },
+  "author": "carlos fuentes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
