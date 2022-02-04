@@ -43,7 +43,7 @@ Employee.updateById = (id, employee, result) => {
 	//update sql
 	sql.query(
 		"UPDATE employees SET first_name = ? , last_name = ? , job = ?  WHERE id = ?",
-		[employee.firstName, employee.lastName, employee.job, id],
+		[employee.first_name, employee.last_name, employee.job, id],
 		(err, res) => {
 			//if we run with errors
 			if (err) {
@@ -80,5 +80,7 @@ Employee.remove = (id, result) => {
 		result(null, res);
 	});
 };
+
+//FindById (select * from employee where id = ?)
 
 module.exports = Employee;
