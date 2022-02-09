@@ -1,5 +1,7 @@
 const express = require( "express" );
 const bodyParser = require( "body-parser" );
+const db = require( "./models" )
+db.sequelize.sync();
 
 
 //initialize express
@@ -11,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 //invoke routes
-
+require( "./routes/movie.routes" )( app );
 
 //start server + port
 app.listen( 3000, () => {
