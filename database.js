@@ -3,5 +3,6 @@ module.exports = {
          HOST: 'localhost',
          USER: 'root',
          PASSWORD : '',
-         DB: 'generarcion-9-bd'
+         DB: 'netflix-bd',
+         DIALECT: 'mysql'
 }

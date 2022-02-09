@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 //invoke routes
-require( './routes/routes' )( app );
+
 
 //start server + port
 app.listen( 3000, () => {
